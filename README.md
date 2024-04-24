@@ -14,10 +14,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-
-wait(2)
-
-
 local Tab = Window:MakeTab({
 	Name = "Discord",
 	Icon = "rbxassetid://4483345998",
@@ -46,13 +42,12 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
-
 local Tab = Window:MakeTab({
-	Name = "Blox Fruit,
+	Name = "Blox Fruit",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-                             
+
 Tab:AddButton({
 	Name = "Banana Hub",
 	Callback = function()
@@ -88,7 +83,6 @@ Tab:AddButton({
 	Name = "W Azure",
 	Callback = function()
       		print("button pressed")
-            getgenv().SlowLoadUi  = true
             loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))() 
   	end    
 })
@@ -116,8 +110,5 @@ Tab:AddButton({
       		print("button pressed")                  loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))() 
   	end    
 })
-
-
-
 
 OrionLib:Init()
