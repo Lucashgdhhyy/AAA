@@ -111,4 +111,14 @@ Tab:AddButton({
   	end    
 })
 
+
+Tab:AddButton({
+	Name = "Redz Hub",
+	Callback = function()
+      		print("button pressed")                  
+loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))() 
+  	end    
+})
+
+
 OrionLib:Init()
