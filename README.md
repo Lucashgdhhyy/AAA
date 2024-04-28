@@ -1,18 +1,22 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
   local Window = OrionLib:MakeWindow({
-		Name = "F Azure🔥",
+		Name = "F Azure",
 		HidePremium = false,
-		SaveConfig = true,
+		SaveConfig = false,
 		ConfigFolder = "OrionTest",
-        IntroText = "F Azure V2.1"       
+        IntroText = "F Azure V1.3"       
 }) --This Will Load The Script Hub
 
 local Tab = Window:MakeTab({
-	Name = "test",
+	Name = "Status",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("Status: 🟢","")
+
+Tab:AddParagraph("Todos Os status aqui","🟢Funcionando , 🟠Cuidado,Atualização , 🔴Fora do ar, ⚫Discontinuado")
 
 local Tab = Window:MakeTab({
 	Name = "Discord",
